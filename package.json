@@ -1,0 +1,30 @@
+{
+  "name": "ragemp-cef-probe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite --host 0.0.0.0\" \"tsc -p tsconfig.client.json --watch --preserveWatchOutput\"",
+    "build": "npm run build:ui && npm run build:client",
+    "build:ui": "vite build",
+    "build:client": "tsc -p tsconfig.client.json",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@ragempcommunity/types-client": "^2.1.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^6.4.2"
+  }
+}

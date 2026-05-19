@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "none",
+    "lib": ["ES2018"],
+    "types": ["@ragempcommunity/types-client"],
+    "outFile": "client_packages/index.js",
+    "strict": true,
+    "skipLibCheck": true,
+    "removeComments": true
+  },
+  "include": ["client/**/*.ts"]
+}
